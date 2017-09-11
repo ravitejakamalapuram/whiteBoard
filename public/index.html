@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.IO whiteboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <script src="one.js"></script>  
+</head>
+<body>
+
+  <canvas class="whiteboard" ></canvas>
+
+  <div class="colors">
+    <div class="color black animated bounce"></div>
+    <div class="color red animated bounce"></div>
+    <div class="color green animated bounce"></div>
+    <div class="color blue animated bounce"></div>
+    <div class="color yellow animated bounce"></div>
+  </div>
+
+  <button class="myButton animated infinite pulse" style="float:right;" onclick="clearCanvas();">Clear</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
