@@ -2,7 +2,8 @@
 
 (function () {
 
-  var socket = io();
+  // var socket = io();
+  var socket = io('http://whiteboard-iamawesome.rhcloud.com/',{path:'/whiteboard/socket.io'});
   var canvas = document.getElementsByClassName('whiteboard')[0];
   var colors = document.getElementsByClassName('color');
   var context = canvas.getContext('2d');
